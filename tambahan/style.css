@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    color: #ededed;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #170909;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: aqua;
+}
+.home {
+    height: 130vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.409), rgba(0,0,0.409)),url(gmbbg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content {
+    max-width: 600px;
+}
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 57px;
+}
+h3 {
+    font-size: 29px;
+    font-weight: 700;
+    color: aqua;
+}
+p {
+    font-size: 14px;
+    margin: 20px 0 40px;
+}
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: aqua;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #170909;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: aqua;
+}
+.btn-box a:nth-child(2):hover {
+    color: #170909;
+}
+.btn-box a:nth-child(2)::before {
+    background: aqua;
+}
+.btn-box a:hover {
+    color: aqua;
+}
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #170909;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before {
+    width: 100%;
+}
+.tentang1 {
+    margin-left: 42%;
+    margin-top: -530px;
+    font-weight: bold;
+    color: aqua;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.tentang2 {
+    position: absolute;
+    top: 95px;
+    left: 35%;
+    font-weight: bold;
+    color: #ededed;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 57px;
+}
+.cerita {
+    color: #ffffff;
+    position: absolute;
+    width: 530px;
+    left: 380px;
+    top: 200px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.cerita1 {
+    -webkit-text-stroke: 0.3px rgb(0, 0, 0);
+}
+.cerita2 {
+    padding-top: 10px;
+    height: 100%;
+    -webkit-text-stroke: 0.3px rgb(0, 0, 0);
+}
+.cttn {
+    margin-top: 260px;
+    margin-left: 200px;
+}
+span {
+    color: aqua;
+}
+.pencapaian {
+    position: absolute;
+    top: 95px;
+    left: 37.7%;
+    font-weight: bold;
+    color:aqua;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 57px;
+}
+.jlgo {
+    margin-left: 460px;
+    margin-top: -150px;
+}
+.isipenc {
+    position: absolute;
+    width: 600px;
+    left: 350px;
+    top: 320px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.isipenc2 {
+    margin-top: 8px;
+}
+.isipenc3 {
+    margin-top: 8px;
+}
+.isipenc4 {
+    margin-top: 8px;
+}
+.kntk {
+    position: absolute;
+    top: 95px;
+    left: 42.5%;
+    font-weight: bold;
+    color:aqua;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 57px;
+}
+.cntclogo {
+    margin-left: 370px;
+    margin-top: -100px;
+}
+.nmr {
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 30px;
+    margin-top: -100px;
+}
+.textkntk {
+    position: absolute;
+    left: 550px;
+    top: 230px;
+    font-size: 14px;
+}
+.fto img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid #52d6ff;
+}
